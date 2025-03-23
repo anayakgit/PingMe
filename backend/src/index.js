@@ -4,7 +4,8 @@ import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import cookieParser from "cookie-parser";
 
-import path from "path";
+import path from "path"; //done
+
 import {connectDB} from "./lib/db.js";
 
 import {app,server} from "./lib/socket.js"
@@ -19,7 +20,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));  // Same for URL
 dotenv.config();
 
 const PORT = process.env.PORT
-const __dirname = path.resolve();
+const __dirname = path.resolve(); // done
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({

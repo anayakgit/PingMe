@@ -54,19 +54,19 @@ const Sidebar = () => {
             `}
                     >
                         <div className="relative mx-auto lg:mx-0">
-  <img
-    src={user.profilePic || "/avatar.jpg"}
-    alt={user.name}
-    className="w-12 h-12 object-cover rounded-full"
-  />
+                            <img
+                                src={user.profilePic || "/avatar.jpg"}
+                                alt={user.name}
+                                className="w-12 h-12 object-cover rounded-full"
+                            />
 
-  {onlineUsers.includes(user._id) && (
-    <span
-      className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full 
+                            {onlineUsers.includes(user._id) && (
+                                <span
+                                    className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full 
       ring-2 ring-white translate-x-1/4 translate-y-1/4"
-    />
-  )}
-</div>
+                                />
+                            )}
+                        </div>
 
 
 
